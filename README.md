@@ -2,10 +2,10 @@
 
 This repository hosts the source code for the Clash Verge documentation website. Clash Verge is an open-source, cross-platform proxy client based on the Tauri framework.
 
-For detailed information about the project and how to contribute or run the documentation site locally, please see the README in your preferred language:
+For detailed information about the project and how to contribute or run the documentation site locally, please see the README:
 
-- **English:** [Read the README in English](./README.en-US.md)
-- **简体中文 (Simplified Chinese):** [阅读简体中文版自述文件](./README.zh-CN.md)
+- [**English**](./README.en-US.md)
+- [**简体中文 (Simplified Chinese)**](./README.zh-CN.md)
 
 ## Documentation Site
 
