@@ -1,0 +1,27 @@
+---
+title: "Clash Verge FAQ: Troubleshooting & Common Questions"
+description: "Find solutions to common Clash Verge issues including MacOS installation problems, language settings, profile URL imports, proxy modes, and system configuration."
+canonical: "https://clash-verge.org/faq"
+---
+
+# Clash Verge FAQ
+
+## "Clash Verge" is damaged and cannot be opened. You should move it to the Trash
+When you open installation package on MacOS firstly, this prompt may appear. You can try to solve the problem by executing the following command in the terminal.
+```bash
+sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app
+```
+This command is used to remove the quarantine flag from the Clash Verge application on macOS. When you download an application from the internet, macOS automatically adds a quarantine attribute。
+
+## How to switch languages in Clash Verge
+In "Settings" tab, scroll down to find "Language" option, select the language you want. 
+
+## How do I import Profile URL?
+You can copy the subscription address(Profile URL) from you Web Proxy Provider, and paste it into Clash Verge.
+
+## How to get started after Profile URL imported?
+After import profile url, in "Proxies" tab, select a node. In the upper right corner of the "Proxies" tab, you can see that there are four modes: Rule,Global,Direct And Script. The "Global" mode will ignore all rules and direct all net traffic to the node you selected. 
+"Rules" mode will proxy network access that matches the rules (which you can find in the "Rules" TAB) to the node you selected. The "Direct" mode will ignore all nodes and all traffic will not go through the proxy. Usually, you can select the "Rule" mode. 
+
+## How to turn on system proxy?
+In "Settings" tab, scroll down to find "System Proxy" and "Auto Launch" option, turn it on.

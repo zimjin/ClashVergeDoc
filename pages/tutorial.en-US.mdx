@@ -1,0 +1,33 @@
+---
+title: "Configuration And Usage Instructions for Clash Verge"
+description: "Complete guide on how to configure and use Clash Verge. Learn how to import proxy configuration URLs or set up your own proxy server step-by-step."
+canonical: "https://clash-verge.org/tutorial"
+---
+# Configuration And Usage Instructions for Clash Verge
+
+Download Clash Verge from [Download Page](/download). After the download is complete, click the installation package, and follow the prompts to complete the installation. Clash Verge is a network proxy. After the installation, you need to configure the proxy node before you can use it. You can choose to build your own proxy server, or directly purchase a commercial proxy server. 
+
+## Proxy Node Configuration
+
+There are two ways to configure the proxy. In most cases we use the first one.
+
+### 1. Import Profile URL
+If you have the Proxy Profile URL, in "Profiles" tab, fill you url, then click "Import" to import the proxy configuration.
+
+
+### 2. Use Your Own Proxy Server
+If you have proxy node server, you need to edit the configuration file and import it yourself.  
+In "Profiles" tab, click "NEW" to create a new profile. In "Create Profile" card, choose "Local" type, then click "CHOOSE FILE" open you proxy configuration file.
+This is a demo proxy configuration file (Before using it, you need to change the proxy node to your own proxy node):  
+[Example Configuration File](https://gist.github.com/zimjin/8c0ec805a2d0fa4f28cc9e517a59ae6b)
+
+## Select Proxy Mode And Node
+Click "Proxies", and in the upper right corner of the "Proxies" tab, you can see that there are four modes: Rule,Global,Direct And Script.   
+- Global: this mode will ignore all rules and direct all net traffic to the node you selected. 
+- Rules:  this mode will proxy network access that matches the rules (which you can find in the "Rules" TAB) to the node you selected. 
+- Direct: this mode will ignore all nodes and all traffic will not go through the proxy. 
+- Script: this mode requires you to write rule scripts for network requests, which is an infrequently used mode.  
+Usually, you can select the "Rule" mode.  Then click to select a proxy node.
+
+## Turn on system proxy
+Select "Settings" in the left navigation bar, then scroll down and find "System Proxy" and turn it on.

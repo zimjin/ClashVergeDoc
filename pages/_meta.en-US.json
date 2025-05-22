@@ -1,0 +1,26 @@
+{
+  "index": {
+    "title": "Clash Verge Introduction",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "download": {
+    "title": "Download And Install",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "tutorial": {
+    "title": "Tutorial",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "faq": {
+    "title": "FAQ",
+    "theme": {
+      "layout": "full"
+    }
+  }
+} 

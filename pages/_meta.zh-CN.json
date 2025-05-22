@@ -1,0 +1,26 @@
+{
+  "index": {
+    "title": "Clash Verge 介绍",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "download": {
+    "title": "下载和安装",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "tutorial": {
+    "title": "使用教程",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "theme": {
+      "layout": "full"
+    }
+  }
+} 

@@ -1,0 +1,75 @@
+---
+title: "Clash Verge 常见问题解答和故障排除"
+description: "查找常见 Clash Verge 问题的解决方法，包括 MacOS 安装问题、语言设置、配置文件 URL 导入、代理模式和系统配置。"
+canonical: "https://clash-verge.org/zh-CN/faq"
+---
+import Image from "next/image";
+import LightboxImage from "../components/LightboxImage";
+
+# Clash Verge 常见问题解答
+
+## “Clash Verge”已损坏，无法打开。你应该把它移到垃圾箱
+当你在MacOS上首次打开安装包时，可能会出现此提示。你可以尝试通过在终端中执行以下命令来解决问题。
+```bash
+sudo xattr -r -d com.apple.quarantine /Applications/Clash\ Verge.app
+```
+此命令用于从 macOS 上的 Clash Verge 应用程序中删除隔离标志。当你从互联网下载应用程序时，macOS 会自动添加隔离属性。
+
+## 如何在 Clash Verge 中切换语言
+在"设置"选项卡中，向下滚动找到"语言"选项，选择您想要的语言。
+
+## 如何导入个人订阅的配置？
+您可以从购买的机场复制订阅地址（配置文件 URL），然后将其地址粘贴到 Clash Verge 中。
+
+## 导入Profile URL后如何开始？
+导入配置文件 URL 后，在"代理"选项卡中选择一个节点。在"代理"选项卡的右上角可以看到有四种模式：规则、全局、直连、脚本。 "全局"模式将忽略所有规则并将代理所有的网络流量。
+"规则"模式将把符合规则（你可以在"规则"选项卡中找到）的网络访问代理到你选择的节点。 "直连"模式将忽略所有节点，所有流量都不会通过代理，相当于所有的流量直连网络。通常情况下，选择"规则"模式即可。
+
+## 如何开启系统代理？
+在"设置"选项卡中，向下滚动找到"系统代理"和"自动启动"选项，将其打开。
+
+## 安装和运行Clash Verge 360等提示"系统修改"  
+一律允许；强烈建议卸载360，使用非国产杀毒软件。
+
+## 打开系统代理之后依然无法使用  
+类似这种系统代理打开之后，依然无法使用的问题，是因为系统代理设置失败了，先检查代理是否设置成功，如果是设置失败，可以尝试手动设置系统代理。  
+首先查看 Calsh Verge 的代理 IP和端口:  
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+    <LightboxImage src="/clash_verge_rev_proxy.png" alt="Clash Verge Rev 系统代理设置" width={472} height={337} />
+</div>
+### MAC   
+  "系统设置"-"网络"-"详细信息"-"代理" 查看 "网页代理(HTTP)"和"安全网页代理(HTTPS)"选项是否打开，代理IP 和端口是否与 Clash Verge 的代理 IP 和端口一致。  
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+  <LightboxImage src="/mac_system_proxy_set.png" alt="MAC 系统设置HTTP代理" width={659} height={311} />
+</div>  
+### Windows  
+先检查代理的设置是否和 Clash Verge 的代理IP和端口是否一致，如果不一致或者没有设置，则可以按照以下步骤进行设置：  
+#### 方法一：通过“设置”应用设置代理服务器（适用于Windows 10/11）
+打开“设置”应用：
+按下Win + I键，打开“设置”。
+进入“网络和Internet”设置：
+在“设置”窗口中选择“网络和Internet”。
+选择“代理”选项：
+在左侧菜单中选择“代理”。
+配置手动代理设置：
+在右侧窗口中，找到“手动代理设置”部分。
+启用“使用代理服务器”开关。
+输入代理服务器的地址和端口号。
+如果需要，可以勾选“对本地地址不使用代理服务器”以避免影响局域网通信。
+配置自动代理配置脚本（可选）：
+如果使用自动配置脚本（PAC文件），启用“使用设置脚本”开关，并输入脚本地址。
+#### 方法二：通过“Internet选项”设置代理服务器（适用于所有版本的Windows）
+打开“控制面板”：
+按下Win + R键，输入control，然后按回车。
+进入“网络和Internet”设置：
+在控制面板中选择“网络和Internet” -> “Internet选项”。
+切换到“连接”选项卡：
+在“Internet属性”窗口中，点击“连接”选项卡。
+配置LAN设置：
+点击“LAN设置”按钮。
+在弹出窗口中，勾选“为LAN使用代理服务器”。
+输入代理服务器的地址和端口号。
+如果需要，可以勾选“对本地地址不使用代理服务器”。
+配置自动代理配置脚本（可选）：
+在“自动配置”部分，勾选“使用自动配置脚本”，并输入脚本地址。
+点击“确定”保存更改。

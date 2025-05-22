@@ -1,0 +1,61 @@
+---
+title: "Clash Verge 配置及使用说明"
+description: "如何配置和使用 Clash Verge 的完整指南。了解如何导入代理配置 URL 或逐步设置你自己的代理服务器。"
+canonical: "https://clash-verge.org/zh-CN/tutorial"
+---
+
+import Image from "next/image";
+import LightboxImage from "../components/LightboxImage";
+
+# Clash Verge 配置和使用说明
+
+从[下载页面](/download)下载 Clash Verge。下载完成后，点击安装包，按照提示完成安装。 Clash Verge 是一个网络代理。安装完成后需要配置代理节点才可以使用。你可以选择构建自己的代理服务器，或者直接购买商业代理服务器。
+
+## 选择语言
+在"设置"选项卡中，下拉找到"语言设置"，选择"简体中文"。  
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+    <LightboxImage src="/select_language.png" alt="Clash Verge 语言选择页面" width={800} height={450} />
+</div>
+
+## 代理节点配置
+
+有两种方法可以配置代理。大多数情况下我们使用第一个。
+
+### 1. 导入配置文件 URL
+如果你有购买，请在"配置"选项卡中填写你购买的订阅 URL，然后单击"导入"以导入代理配置。
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+    <LightboxImage src="/import_config_url.png" alt="Clash Verge 导入订阅 URL" width={800} height={450} />
+</div>
+
+### 2. 使用你自己搭建的代理服务器
+如果你有自建的代理服务器，那么你需要自行编写配置文件并导入。
+在"配置文件"选项卡中，单击"新建"以创建新的配置文件。在"创建配置文件"中，选择"本地"类型，然后单击"选择文件"打开你的代理配置文件。
+这是一个代理配置文件的示例（使用前需要将代理节点更改为自己的代理节点）：
+[示例配置文件](https://gist.github.com/zimjin/8c0ec805a2d0fa4f28cc9e517a59ae6b)
+
+## 选择代理模式和节点
+点击"代理"选项卡，在"代理"选项卡的右上角可以看到有规则、全局、直连和脚本四种模式。
+- 全局：此模式将忽略所有规则并将所有网络流量引导至您选择的节点。
+- 规则：此模式将把符合规则（您可以在"规则"选项卡中找到）的网络访问代理到您选择的节点。
+- 直接：此模式将忽略所有节点，所有流量都不会通过代理。
+- 脚本：此模式需要您编写网络请求的规则脚本，这是一种不常用的模式。
+通常情况下，选择"规则"模式即可。然后单击选择一个代理节点。
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+    <LightboxImage src="/proxy_groups.png" alt="Clash Verge 选择代理节点" width={800} height={450} />
+</div>
+
+## 开启系统代理
+在左侧导航栏中选择"设置"，然后向下滚动找到"系统代理"并将其打开。  
+<div style={{display: 'flex', justifyContent: 'center', margin: '20px 0'}}>
+    <LightboxImage src="/set_system_proxy.png" alt="Clash Verge 开启系统代理" width={800} height={450} />
+</div>  
+完成以上配置之后，开始使用 Clash Verge 吧！
+
+<span id="proxy-recommend"></span>
+## 代理推荐
+### [狗狗加速](https://invite.dginv.click/#/register?code=ROXYEpnJ) 
+<strong style={{ color: '#FAAD14', fontSize: '1.2em' }}>注册送3天免费体验流量</strong>
+### [蜂群VPN](https://fq-top-v-fast.com/#/register?code=PydaVDhL)   
+<strong style={{ color: '#FAAD14', fontSize: '1.2em' }}>价格实惠，适合新手</strong>
+### [Shadowsocks](https://secure.shadowsocks.au/aff.php?aff=3136)
+<strong style={{ color: '#FAAD14', fontSize: '1.2em' }}>老牌代理，稳定可靠</strong>
