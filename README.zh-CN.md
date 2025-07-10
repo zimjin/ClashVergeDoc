@@ -51,7 +51,8 @@ Clash Verge Rev 是在 Clash Verge 归档之后，基于 Clash Verge 的源码�
     yarn dev
     ```
     然后访问 http://localhost:3000。
-
+## 友情链接
+[RestorePhotos](https://restorephoto.net)
 ## 许可证
 
 本项目采用 MIT 许可证。 
